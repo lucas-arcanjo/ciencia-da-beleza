@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ciência da Beleza - Realce sua beleza natural com serviços de qualidade.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ciência da Beleza</title>
+  <meta name="description" content="Realce sua beleza natural com nossos serviços especializados.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <header class="bg-light border-bottom">
-    <nav class="navbar navbar-expand-lg navbar-light container">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark color-salon fixed-top shadow-sm">
+    <div class="container">
       <a class="navbar-brand" href="#">Ciência da Beleza</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -20,50 +25,140 @@
           <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
           <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="btn btn-destaque ms-2" href="https://wa.me/5511959572832"
+              target="_blank">AGENDA</a></li>
         </ul>
       </div>
-    </nav>
-    <section class="text-center bg-secondary text-white py-5">
-      <h2 class="display-5">Realce sua beleza natural</h2>
-      <a class="btn btn-light mt-3" href="https://wa.me/5511999999999" target="_blank">Agende agora</a>
-    </section>
-  </header>
+    </div>
+  </nav>
 
-  <main class="container py-5">
-    <section id="sobre" class="mb-5">
-      <h2>Sobre nós</h2>
-      <p>Somos um salão especializado em cuidados com cabelo, pele e unhas. Atuamos com amor, ciência e dedicação para realçar a beleza natural de cada cliente.</p>
-    </section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1 class="display-4 fw-bold">Bem-vinda ao Salão</h1>
+      <p class="lead mb-4">Realce sua beleza natural com profissionais apaixonados</p>
+      <a class="btn btn-destaque btn-lg" href="https://wa.me/5511959572832" target="_blank">SAIBA MAIS</a>
+    </div>
+  </section>
 
-    <section id="servicos" class="mb-5">
-      <h2>Serviços</h2>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Coloração</li>
-        <li class="list-group-item">Corte feminino e masculino</li>
-        <li class="list-group-item">Hidratação capilar</li>
-        <li class="list-group-item">Design de sobrancelhas</li>
-        <li class="list-group-item">Manicure e pedicure</li>
-      </ul>
-    </section>
+  <!-- Conteúdo -->
+  <section id="sobre" class="sobre-mim-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
 
-    <section id="portfolio" class="mb-5">
-      <h2>Portfólio</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3"><img src="img/exemplo1.jpg" class="img-fluid rounded" alt="Resultado de cabelo colorido"></div>
-        <div class="col-md-4 mb-3"><img src="img/exemplo2.jpg" class="img-fluid rounded" alt="Design de sobrancelhas"></div>
-        <div class="col-md-4 mb-3"><img src="img/exemplo3.jpg" class="img-fluid rounded" alt="Unhas decoradas"></div>
+        <!-- Imagem -->
+        <div class="col-md-5 mb-4 mb-md-0 position-relative">
+          <div class="img-experiencia">
+            <img src="img/ylza.jpg" alt="Ylza Souza" class="img-fluid rounded">
+            <div class="experiencia-box">
+              <div class="text-start small">Minha Experiência</div>
+              <div class="fs-4 fw-bold">15+</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="col-md-7">
+          <h5 class="text-warning">Sobre mim</h5>
+          <h2 class="fw-bold">SUA BELEZA E O<br>SUCESSO COMEÇA AQUI</h2>
+          <p class="mt-3">
+            No Salão Ciência da Beleza, acreditamos que cada cliente merece o melhor. Ylza Souza, com sua paixão e
+            dedicação, assegura que cada serviço seja executado com maestria. Especialista em loiros e alongamento de
+            cabelos, Ylza transforma visualmente seus clientes, oferecendo desde o corte perfeito até a coloração
+            vibrante. Nosso compromisso é proporcionar uma experiência de beleza incomparável.
+          </p>
+          <p>
+            Ciência da Beleza: 15 anos transformando você em sua melhor versão.<br>
+            Ilza Souza e Ciência da Beleza: excelência e paixão em cada detalhe.
+          </p>
+          <a href="#contato" class="btn btn-destaque mt-3">SAIBA MAIS</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contato" class="mb-5">
-      <h2>Contato</h2>
-      <p>Agende pelo WhatsApp: <a href="https://wa.me/5511959572832">(11) 95957-2832</a></p>
-      <p>Siga no Instagram: <a href="https://instagram.com/salao.cienciadabeleza" target="_blank">@salao.cienciadabeleza</a></p>
-    </section>
+  <section id="servicos" class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">Serviços</h2>
+
+    <div id="carouselServicos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <img src="img/servico1.jpg" class="rounded-circle mb-3" width="140" height="140" alt="Coloração">
+              <h5>Coloração</h5>
+              <p>Técnicas modernas para realçar a cor dos seus cabelos com brilho e estilo.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/servico2.jpg" class="rounded-circle mb-3" width="140" height="140" alt="Corte">
+              <h5>Corte Feminino e Masculino</h5>
+              <p>Cortes que valorizam seu rosto, sua identidade e sua personalidade.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/servico3.jpg" class="rounded-circle mb-3" width="140" height="140" alt="Alongamento">
+              <h5>Alongamento</h5>
+              <p>Fios longos e naturais com técnicas modernas e duradouras.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <img src="img/servico4.jpg" class="rounded-circle mb-3" width="140" height="140" alt="Sobrancelhas">
+              <h5>Design de Sobrancelhas</h5>
+              <p>Realce seu olhar com design profissional e simetria perfeita.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/servico5.jpg" class="rounded-circle mb-3" width="140" height="140" alt="Manicure">
+              <h5>Manicure e Pedicure</h5>
+              <p>Beleza e cuidado para suas mãos e pés com acabamento impecável.</p>
+            </div>
+            <div class="col-md-4">
+              <img src="img/servico6.jpg" class="rounded-circle mb-3" width="140" height="140" alt="Hidratação">
+              <h5>Hidratação Capilar</h5>
+              <p>Tratamento profundo para brilho, força e maciez nos seus fios.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselServicos" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+  <section id="portfolio" class="mb-5 text-center">
+    <h2>Portfólio</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3"><img src="img/exemplo1.jpg" class="img-fluid rounded" alt=""></div>
+      <div class="col-md-4 mb-3"><img src="img/exemplo2.jpg" class="img-fluid rounded" alt=""></div>
+      <div class="col-md-4 mb-3"><img src="img/exemplo3.jpg" class="img-fluid rounded" alt=""></div>
+    </div>
+  </section>
+
+  <section id="contato" class="mb-5 text-center">
+    <h2>Contato</h2>
+    <p>WhatsApp: <a href="https://wa.me/5511959572832" target="_blank">(11) 95957-2832</a></p>
+    <p>Instagram: <a href="https://instagram.com/salao.cienciadabeleza" target="_blank">@salao.cienciadabeleza</a></p>
+  </section>
   </main>
 
-  <footer class="bg-light text-center py-3">
-    <p>&copy; 2025 Ciência da Beleza. Todos os direitos reservados.</p>
+  <!-- Footer -->
+  <footer class="color-salon text-light text-center py-3">
+    <p class="mb-0">&copy; 2025 Ciência da Beleza. Todos os direitos reservados.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
