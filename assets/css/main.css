@@ -536,8 +536,9 @@ h6 {
   position: relative;
   display: inline-block;
   padding: 10px; /* espaçamento interno para borda */
-  /* background-color: #d97ea3; tom mais suave de rosa/pink */
-  background-color: rgb(137 55 93);
+  background-color: var(--accent-color);
+; 
+  /* background-color: rgb(137 55 93); */
   border-radius: 50%; /* cantos arredondados */
   box-shadow: 5px 5px 20px rgba(0,0,0,0.15); /* profundidade */
 
