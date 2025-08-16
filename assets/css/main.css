@@ -1458,3 +1458,8 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+.ee {
+  background-color: #cb9cbb8f;
+  padding-right: 15px !important;
+  border-radius: 15px;
+}
